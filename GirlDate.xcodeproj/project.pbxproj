@@ -14,6 +14,12 @@
 		BF6C671E1A66CA5900F2F8C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6C671D1A66CA5900F2F8C3 /* Images.xcassets */; };
 		BF6C67211A66CA5900F2F8C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6C671F1A66CA5900F2F8C3 /* LaunchScreen.xib */; };
 		BF6C672D1A66CA5A00F2F8C3 /* GirlDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C672C1A66CA5A00F2F8C3 /* GirlDateTests.swift */; };
+		BF6C673F1A66CDEB00F2F8C3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C673E1A66CDEB00F2F8C3 /* DataManager.swift */; };
+		BF6C67421A66CFE000F2F8C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C67411A66CFE000F2F8C3 /* LoginViewController.swift */; };
+		BF6C67441A66D2F900F2F8C3 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C67431A66D2F900F2F8C3 /* InviteViewController.swift */; };
+		BF6C67461A66D53600F2F8C3 /* InviteTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C67451A66D53600F2F8C3 /* InviteTabViewController.swift */; };
+		BF88BBF81A66F72B009EB5F3 /* SearchFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88BBF71A66F72B009EB5F3 /* SearchFriendViewController.swift */; };
+		BF88BBFA1A66FCD7009EB5F3 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88BBF91A66FCD7009EB5F3 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		BF6C672B1A66CA5A00F2F8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6C672C1A66CA5A00F2F8C3 /* GirlDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlDateTests.swift; sourceTree = "<group>"; };
 		BF6C67361A66CCAF00F2F8C3 /* GirlDate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GirlDate-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF6C673E1A66CDEB00F2F8C3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BF6C67411A66CFE000F2F8C3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF6C67431A66D2F900F2F8C3 /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		BF6C67451A66D53600F2F8C3 /* InviteTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteTabViewController.swift; sourceTree = "<group>"; };
+		BF88BBF71A66F72B009EB5F3 /* SearchFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFriendViewController.swift; sourceTree = "<group>"; };
+		BF88BBF91A66FCD7009EB5F3 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		C9AB8A89F3BD287A2CC12466 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,8 +114,9 @@
 		BF6C67131A66CA5900F2F8C3 /* GirlDate */ = {
 			isa = PBXGroup;
 			children = (
+				BF6C67401A66CFC800F2F8C3 /* View */,
+				BF6C67391A66CD5E00F2F8C3 /* Model */,
 				BF6C67161A66CA5900F2F8C3 /* AppDelegate.swift */,
-				BF6C67181A66CA5900F2F8C3 /* ViewController.swift */,
 				BF6C671A1A66CA5900F2F8C3 /* Main.storyboard */,
 				BF6C671D1A66CA5900F2F8C3 /* Images.xcassets */,
 				BF6C671F1A66CA5900F2F8C3 /* LaunchScreen.xib */,
@@ -136,6 +149,27 @@
 				BF6C672B1A66CA5A00F2F8C3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF6C67391A66CD5E00F2F8C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF6C673E1A66CDEB00F2F8C3 /* DataManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF6C67401A66CFC800F2F8C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF6C67181A66CA5900F2F8C3 /* ViewController.swift */,
+				BF6C67411A66CFE000F2F8C3 /* LoginViewController.swift */,
+				BF6C67451A66D53600F2F8C3 /* InviteTabViewController.swift */,
+				BF6C67431A66D2F900F2F8C3 /* InviteViewController.swift */,
+				BF88BBF71A66F72B009EB5F3 /* SearchFriendViewController.swift */,
+				BF88BBF91A66FCD7009EB5F3 /* RestaurantViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6C67421A66CFE000F2F8C3 /* LoginViewController.swift in Sources */,
+				BF88BBFA1A66FCD7009EB5F3 /* RestaurantViewController.swift in Sources */,
+				BF6C67461A66D53600F2F8C3 /* InviteTabViewController.swift in Sources */,
+				BF88BBF81A66F72B009EB5F3 /* SearchFriendViewController.swift in Sources */,
 				BF6C67191A66CA5900F2F8C3 /* ViewController.swift in Sources */,
+				BF6C673F1A66CDEB00F2F8C3 /* DataManager.swift in Sources */,
 				BF6C67171A66CA5900F2F8C3 /* AppDelegate.swift in Sources */,
+				BF6C67441A66D2F900F2F8C3 /* InviteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
