@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CFBDED3AC53D0AE25A1D234 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AB8A89F3BD287A2CC12466 /* libPods.a */; };
 		BF6C67171A66CA5900F2F8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C67161A66CA5900F2F8C3 /* AppDelegate.swift */; };
 		BF6C67191A66CA5900F2F8C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C67181A66CA5900F2F8C3 /* ViewController.swift */; };
 		BF6C671C1A66CA5900F2F8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6C671A1A66CA5900F2F8C3 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		422E1BE87373D7C907E1923C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7B2A1F6EF747AA91BD301763 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6C67111A66CA5900F2F8C3 /* GirlDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C67151A66CA5900F2F8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6C67161A66CA5900F2F8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		BF6C67261A66CA5A00F2F8C3 /* GirlDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GirlDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C672B1A66CA5A00F2F8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6C672C1A66CA5A00F2F8C3 /* GirlDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlDateTests.swift; sourceTree = "<group>"; };
+		BF6C67361A66CCAF00F2F8C3 /* GirlDate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GirlDate-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9AB8A89F3BD287A2CC12466 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFBDED3AC53D0AE25A1D234 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		294ADF273760D659398DF8C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2A1F6EF747AA91BD301763 /* Pods.debug.xcconfig */,
+				422E1BE87373D7C907E1923C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		787323ADFE8C2C6D5F3E93CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9AB8A89F3BD287A2CC12466 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF6C67081A66CA5900F2F8C3 = {
 			isa = PBXGroup;
 			children = (
 				BF6C67131A66CA5900F2F8C3 /* GirlDate */,
 				BF6C67291A66CA5A00F2F8C3 /* GirlDateTests */,
 				BF6C67121A66CA5900F2F8C3 /* Products */,
+				294ADF273760D659398DF8C0 /* Pods */,
+				787323ADFE8C2C6D5F3E93CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +108,7 @@
 				BF6C671D1A66CA5900F2F8C3 /* Images.xcassets */,
 				BF6C671F1A66CA5900F2F8C3 /* LaunchScreen.xib */,
 				BF6C67141A66CA5900F2F8C3 /* Supporting Files */,
+				BF6C67361A66CCAF00F2F8C3 /* GirlDate-Bridging-Header.h */,
 			);
 			path = GirlDate;
 			sourceTree = "<group>";
@@ -119,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF6C67301A66CA5A00F2F8C3 /* Build configuration list for PBXNativeTarget "GirlDate" */;
 			buildPhases = (
+				AE64778164D6196708C28FBF /* Check Pods Manifest.lock */,
 				BF6C670D1A66CA5900F2F8C3 /* Sources */,
 				BF6C670E1A66CA5900F2F8C3 /* Frameworks */,
 				BF6C670F1A66CA5900F2F8C3 /* Resources */,
+				C354CA46E02B0C69228DACBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +234,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE64778164D6196708C28FBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C354CA46E02B0C69228DACBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF6C670D1A66CA5900F2F8C3 /* Sources */ = {
@@ -336,21 +397,28 @@
 		};
 		BF6C67311A66CA5A00F2F8C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2A1F6EF747AA91BD301763 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GirlDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GirlDate/GirlDate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BF6C67321A66CA5A00F2F8C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422E1BE87373D7C907E1923C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GirlDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GirlDate/GirlDate-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +475,7 @@
 				BF6C67321A66CA5A00F2F8C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6C67331A66CA5A00F2F8C3 /* Build configuration list for PBXNativeTarget "GirlDateTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +484,7 @@
 				BF6C67351A66CA5A00F2F8C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
